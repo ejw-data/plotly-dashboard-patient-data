@@ -2,12 +2,13 @@
 // 1.  Inspect data - samples.json, will need to use d3.json().then..
 // 2.  Fill in 'sample #' element with data - dropdown input will feed into chart generation
 // 2b. Will probably need to start with an initial chart
-// 3.  Use sample# to select demographic info
+// 3.  Will also need a function for updating
+// 3b.  Use sample# to select demographic info and chart data
 
 // Revisions:
 // Make two functions init() and optionChanged()
 // init() includes data filling the dropdown and making initial charts with '940' data
-// optionChanged() overwrites text or updates charts
+// optionChanged() overwrites text and updates charts
 
 
 function init(){
@@ -98,6 +99,10 @@ function init(){
       mode: "gauge+number",
       gauge: { 
         axis: { visible: true, range: [0, 9]},
+        // Note:  I could make the code below more concise.  I could make a for loop
+        // and increment the range in smaller increments and make the rgba values linearly
+        // increment - the for loop would insert dictionaries like below into a list and 
+        // assign the list to steps
         steps: [
           { range: [0, 1], color: 'rgba(210,208,35,1)'}, 
           { range: [1, 2], color: 'rgba(185,200,35,1)'},
@@ -120,7 +125,7 @@ function init(){
   });  //JSON Data Closure
 };   //end function
 
-init();
+init();  // Call init
 
 //***************************************************************************************************/
  
