@@ -18,7 +18,7 @@ function init(){
     var data = incomingdata;
 
     //// Data Explore
-    //dataExplore(data);
+    dataExplore(data);
 
     // Do not reload page ... preserve
     // ADD CODE
@@ -173,8 +173,10 @@ function dataExplore(data) {
   //Data exploration
   console.log(data);
   console.log(data.names)
+  console.log(`Samples: ${data.samples[0].sample_values.length}`);
   console.log(data.metadata[0]);
   console.log(data.metadata[0].id);
+  console.log(`sampleset = ${data.samples[0]}`);
   console.log(data.samples[0].sample_values.slice(0,10));
   console.log(data.samples[0].otu_ids.slice(0,10));
   console.log(data.samples[0].otu_labels.slice(0,10));
