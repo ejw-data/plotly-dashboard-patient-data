@@ -14,7 +14,7 @@
 function init(){
 
   //Access Data
-  d3.json("samples.json").then((incomingdata) => {
+  d3.json("static/data/samples.json").then((incomingdata) => {
     var data = incomingdata;
 
     //// Data Explore
@@ -133,7 +133,7 @@ function optionChanged(){
   var inputValue = d3.select("#selDataset").node().value
   console.log(inputValue);
 
-  d3.json("samples.json").then((incomingdata) => {
+  d3.json("static/data/samples.json").then((incomingdata) => {
     var data = incomingdata;
 
     var sidebarData = Object.entries(data.metadata[inputValue]);
