@@ -8,7 +8,7 @@
 <br>
 
 ## Sample Maps
-https://ejw-data.github.io/plotly-dashboard-challenge/
+https://ejw-data.github.io/plotly-dashboard-selector
 <br>
 <br>
 ## Noteable Revisions
