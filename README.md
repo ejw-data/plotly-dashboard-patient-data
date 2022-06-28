@@ -15,7 +15,7 @@ This repo is a personal project of a Plotly javascript dashboard that updates ba
 
 ## Github Pages  
 
-https://ejw-data.github.io/plotly-dashboard-challenge/  
+https://ejw-data.github.io/plotly-dashboard-patient-data/index.html  
    
 
 <br>
