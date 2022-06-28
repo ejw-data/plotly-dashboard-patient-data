@@ -44,5 +44,3 @@ https://ejw-data.github.io/plotly-dashboard-challenge/
 ## Example
 
 ![Plotly Dashboard with Dropdown Selection](./config/images/dashboard1.JPG)
-
-
